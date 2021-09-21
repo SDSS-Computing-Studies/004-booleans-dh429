@@ -22,7 +22,7 @@ negative
 """
 
 number = input("Enter a number:") 
-number = int(number)
+number = float(number)
 
 if number > 0:
     print("postive")

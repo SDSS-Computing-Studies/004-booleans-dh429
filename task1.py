@@ -20,7 +20,7 @@ Enter a number: 102
 The number is larger than 100
 """
 number = input("Enter a number:")
-number = int(number)
+number = float(number)
 
 if number > 100:
     print("The number is larger than 100")
