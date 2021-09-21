@@ -19,7 +19,7 @@ Enter a sentence: The best password is no password.
 the sentence contains password
 """
 
-sen = input("Enter a sentence:")
+sen = input("Enter a sentence:").strip()
 
 if "password" in sen:
     print("The sentence contains password")
