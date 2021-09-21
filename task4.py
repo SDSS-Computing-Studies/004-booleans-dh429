@@ -22,7 +22,7 @@ the sentence contains password
 sen = input("Enter a sentence:").strip()
 
 if "password" in sen:
-    print("The sentence contains password")
+    print("the sentence contains password")
 
 else:
     print("the sentence does not contain password")
