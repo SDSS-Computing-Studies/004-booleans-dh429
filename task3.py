@@ -41,8 +41,8 @@ if number >= 1000:
 elif number <= 100:
     print("2")
 
-elif number in range(10, 100):
+elif number <= 10:
     print("1")
 
-elif number in range(0, 10):
+elif number <= 0:
     print("0")
