@@ -33,3 +33,49 @@ that is an obtuse triangle
 
 
 """
+side1 = input("Enter one side:")
+side1 = float(side1)
+
+side2 = input("Enter a second side:")
+side2 = float(side2)
+
+side3 = input("Enter the third side:")
+side3 = float(side3)
+
+#Check if side1 is longer than side2
+if side1 > side2:
+    #Check if side2 is longer than side3
+    if side2 >= side3:
+        hyp = side1
+    #If side3 is longer than side2 it checks if its longer than side3
+    else:
+        if side3 > side1:
+            hyp = side3
+        else:
+            hyp = side1
+
+    
+#if side2 is longer 
+elif side1 < side2:
+    if side1 >= side3: 
+        hyp = side2
+    else:
+        if side3 > side2:
+            hyp = side3
+        else:
+            hyp = side2
+
+
+if hyp == side1:
+    if side2**2 + side3**2 == hyp**2:
+        print("that is a right triangle")
+
+if hyp == side2:
+    if side1**2 + side3**2 == hyp**2:
+        print("that is a right triangle")
+
+if hyp == side3:
+    if side1**2 + side2**2 == hyp**2:
+        print("that is a right triangle")
+
+

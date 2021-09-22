@@ -32,7 +32,7 @@ Enter a number: 10000
 
 """
 
-number = input("Enter a number:").strip()
+number = input("Enter a number:")
 number = float(number)
 
 if number >= 1000:
