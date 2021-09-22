@@ -28,7 +28,7 @@
 username = input("Enter username:").strip()
 
 if "admin" in username:
-    password = input("Enter password:")
+    password = input("Enter password:").strip()
 
     if "12345password" in password:
         print("Access granted")
@@ -39,4 +39,3 @@ if "admin" in username:
 else:
     print("invalid user")
 
-    
