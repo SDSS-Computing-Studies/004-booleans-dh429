@@ -13,3 +13,9 @@
 
 number = input("Enter a number:")
 number = float(number)
+
+if number.is_integer():
+    print("the number is an integer")
+
+else:
+    print("the number is not an integer")
