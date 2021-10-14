@@ -1,5 +1,4 @@
 #! python3
-
 """
 In math, if a quadratic equation is in the format
 ax^2 + bx + c = 0, the discriminant can be calculated as
@@ -29,3 +28,32 @@ Enter c: 8
 the equation can not be factored
 
 """
+import math
+
+
+a = input("Enter a:")
+a = float(a)
+
+b = input("Enter b:")
+b = float(b)
+
+c = input("Enter c:")
+c = float(c)
+
+#b^2 - 4 * a * c
+
+answer = ((b**2) - 4 * a * c)
+try:
+    check = math.sqrt(answer)
+except:
+    print("the equation can not be factored")
+    exit()
+
+if check.is_integer():
+    print("the equation can be factored")
+
+else:
+    print("the equation can not be factored")
+    
+
+
