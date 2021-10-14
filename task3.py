@@ -38,11 +38,11 @@ number = float(number)
 if number >= 1000:
     print("3")
 
-elif number <= 100:
+elif number >= 100 and number < 1000:
     print("2")
 
-elif number <= 10:
+elif number >= 10 and number < 100:
     print("1")
 
-elif number <= 0:
+elif number >= 0 and number < 100:
     print("0")
