@@ -41,7 +41,7 @@ sidea = float(sidea)
 sideb = input("Enter a second side:")
 sideb = float(sideb)
 
-sidec = input("Ener third side:")
+sidec = input("Enter third side:")
 sidec = float(sidec)
 
 if sidea > sideb and sidea > sidec:
