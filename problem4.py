@@ -33,59 +33,40 @@ that is an obtuse triangle
 
 
 """
-side1 = input("Enter one side:")
-side1 = float(side1)
+import math
 
-side2 = input("Enter a second side:")
-side2 = float(side2)
+sidea = input("Enter one side:")
+sidea = float(sidea)
 
-side3 = input("Enter the third side:")
-side3 = float(side3)
+sideb = input("Enter a second side:")
+sideb = float(sideb)
 
-#Check if side1 is longer than side2
-if side1 > side2:
-    #Check if side2 is longer than side3
-    if side2 >= side3:
-        hyp = side1
-    #If side3 is longer than side2 it checks if its longer than side3
-    else:
-        if side3 > side1:
-            hyp = side3
-        else:
-            hyp = side1
+sidec = input("Ener third side:")
+sidec = float(sidec)
 
-    
-#if side2 is longer 
-elif side1 < side2:
-    if side1 >= side3: 
-        hyp = side2
-    else:
-        if side3 > side2:
-            hyp = side3
-        else:
-            hyp = side2
-
-
-if hyp == side1:
-    if side2**2 + side3**2 == hyp**2:
-        print("that is an right triangle")
-    elif side2**2 + side3**2 > hyp**2:
+if sidea > sideb and sidea > sidec:
+    hyp = sidea
+    if sideb**2 + sidec**2 == hyp**2:
+        print("that is a right triangle")
+    elif sideb**2 + sidec**2 > hyp**2:
         print("that is an acute triangle")
-    elif side2**2 + side3**2 < hyp**2:
-        print("that is an obtuse triangle")
+    elif sideb**2 + sidec**2 < hyp**2:
+        print("thas is an obtuse triangle")        
 
-if hyp == side2:
-    if side1**2 + side3**2 == hyp**2:
-        print("that is an right triangle")
-    elif side1**2 + side3**2 > hyp**2:
+if sideb > sidea and sideb > sidec:
+    hyp = sideb
+    if sidea**2 + sidec**2 == hyp**2:
+        print("that is a right triangle")
+    elif sidea**2 + sidec**2 > hyp**2:
         print("that is an acute triangle")
-    elif side1**2 + side3**2 < hyp**2:
-        print("that is an obtuse triangle")
+    elif sidea**2 + sidec**2 < hyp**2:
+        print("thas is an obtuse triangle")        
 
-if hyp == side3:
-    if side1**2 + side2**2 == hyp**2:
-        print("that is an right triangle")
-    elif side1**2 + side2**2 > hyp**2:
+if sidec > sideb and sidec > sidea:
+    hyp = sidec
+    if sidea**2 + sideb**2 == hyp**2:
+        print("that is a right triangle")
+    elif sidea**2 + sideb**2 > hyp**2:
         print("that is an acute triangle")
-    elif side1**2 + side2**2 < hyp**2:
-        print("that is an obtuse triangle")
+    elif sidea**2 + sideb**2 < hyp**2:
+        print("thas is an obtuse triangle")        
