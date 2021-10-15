@@ -62,7 +62,7 @@ if sideb > sidea and sideb > sidec:
     elif sidea**2 + sidec**2 > hyp**2:
         print("that is an acute triangle")
     elif sidea**2 + sidec**2 < hyp**2:
-        print("thas is an obtuse triangle")        
+        print("that is an obtuse triangle")        
 
 if sidec > sideb and sidec > sidea:
     hyp = sidec
@@ -72,4 +72,4 @@ if sidec > sideb and sidec > sidea:
     elif sidea**2 + sideb**2 > hyp**2:
         print("that is an acute triangle")
     elif sidea**2 + sideb**2 < hyp**2:
-        print("thas is an obtuse triangle")        
+        print("that is an obtuse triangle")        
