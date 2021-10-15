@@ -46,15 +46,17 @@ sidec = float(sidec)
 
 if sidea > sideb and sidea > sidec:
     hyp = sidea
+    hyp = round(hyp)
     if sideb**2 + sidec**2 == hyp**2:
         print("that is a right triangle")
     elif sideb**2 + sidec**2 > hyp**2:
         print("that is an acute triangle")
     elif sideb**2 + sidec**2 < hyp**2:
-        print("thas is an obtuse triangle")        
+        print("that is an obtuse triangle")        
 
 if sideb > sidea and sideb > sidec:
     hyp = sideb
+    hyp = round(hyp)
     if sidea**2 + sidec**2 == hyp**2:
         print("that is a right triangle")
     elif sidea**2 + sidec**2 > hyp**2:
@@ -64,6 +66,7 @@ if sideb > sidea and sideb > sidec:
 
 if sidec > sideb and sidec > sidea:
     hyp = sidec
+    hyp = round(hyp)
     if sidea**2 + sideb**2 == hyp**2:
         print("that is a right triangle")
     elif sidea**2 + sideb**2 > hyp**2:
